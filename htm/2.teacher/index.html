@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xx课题组</title>
+    <link rel="stylesheet" href="../.././css/header.css">
+    <style type="text/css">
+        .bar a:nth-child(2) { /* 注意修改本页 */
+            background-color: #8faadc;
+            font-weight: bold;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* 元素在主轴上平均分布 */
+            background-color: indianred;
+        }
+        .content table {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            border-collapse: collapse; /* 合并表格边框 */
+            table-layout: fixed; /* 固定表格布局 */
+            background-color: green;
+        }
+        .content td {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            border: none; /* 隐藏表格边框 */
+            background-color: orangered;
+
+        }
+        .content img {
+            float: left; /* 图片浮动到左侧 */
+            margin-right: 10px;
+        }
+        #pre-teacher {
+            width: 450px; /* 每个单元格的宽度，减去左右边距 */
+            height: 300px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            display: flex; /* 将teacher内部设置为flex布局 */
+        }
+        
+        #pre-info {
+            text-align: left;
+            display: flex;
+            flex-direction: column; /* 沿着纵轴排列 */
+        }
+
+        #pre-photo {
+            width: 200px;
+            height: 300px;
+            background-size: cover; /* 图片填满容器，超出部分裁剪 */
+            background-position: center center; /* 图片居中 */
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head-1">
+            <img id="logo" src="../.././res/1.index/logo.jpg" alt="吉林师范大学">
+            <div class="head-2">
+                <p id="group">xxxx课题组</p>
+                <p id="school">吉林师范大学xx学院</p>
+            </div>
+        </div>
+
+        <div class="bar">
+          <a href="../../index.html">首页</a>
+          <a href="#">教师介绍</a>
+          <a href="#">组员介绍</a>
+          <a href="#">研究方向</a>
+          <a href="#">成果及论文</a>
+          <a href="#">课题组新闻</a>
+          <a href="#">组内活动</a>
+          <a href="#">加入我们</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <td>
+                    <div id="pre-teacher">
+                        <div id="pre-photo" style="background-image: url('1.jpg');"></div>
+                        <div id="pre-info">
+                            <p>老师1简介老师1简介老师1简介老师1</p>
+                            <p>老师1简介</p>
+                            <p>老师1简介</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="pre-teacher">
+                        <div id="pre-photo" style="background-image: url('1.jpg');"></div>
+                        <div id="pre-info">
+                            <p>老师2简介</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="pre-teacher">
+                        <div id="pre-photo" style="background-image: url('1.jpg');"></div>
+                        <div id="pre-info">
+                            <p>老师3简介</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
